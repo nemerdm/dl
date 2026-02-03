@@ -1,0 +1,1119 @@
+<!doctype html>
+<html lang="pl" class="scroll-smooth dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cennik i Pakiety - Agencja Kreatywna DrawLab (Radom)</title>
+    <meta
+      name="description"
+      content="Sprawdź transparentny cennik i pakiety usług DrawLab: strony WWW, branding, SEO. Jasne ceny, bez ukrytych kosztów. Radom i okolice."
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-fresh-blue: #4ca9df;
+        --color-fresh-mint: #a1ffb3;
+        --color-bold-indigo: #42378f;
+        --color-bold-coral: #f53844;
+        --font-display: 'Unbounded', sans-serif;
+        --font-sans: 'Inter', system-ui, sans-serif;
+      }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="theme-color" content="#0D0D0D" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F9FAFB" media="(prefers-color-scheme: light)" />
+  </head>
+  <body class="overflow-x-hidden bg-white dark:bg-[#050505] transition-colors duration-300">
+    <div id="scroll-progress-bar"></div>
+
+    <div id="preloader">
+      <div class="preloader-logo">DL</div>
+    </div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- NAWIGACJA -->
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 w-full bg-(--bg-color)/90 backdrop-blur-lg border-b border-gray-100 dark:border-white/5 transition-all duration-300"
+      id="main-nav"
+    >
+      <div class="w-full max-w-7xl mx-auto px-6 md:px-12 py-6 flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-2">
+          <img src="assets/images/logo.ver2.png" alt="DrawLab Logo" class="h-8 md:h-10 w-auto" />
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <div class="relative group">
+            <button
+              class="nav-link-gradient flex items-center gap-1"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span>Oferta</span>
+              <svg
+                class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="mega-menu hidden group-hover:block group-focus-within:block absolute top-full left-1/2 -translate-x-1/2 z-51 glass-effect shadow-2xl rounded-2xl overflow-hidden"
+            >
+              <div class="grid grid-cols-3 gap-6 pt-10 pb-8 px-8">
+                <a href="usluga-strony-www.html" class="mega-menu-item group/item rounded-md">
+                  <div class="icon-wrapper p-3 rounded-full">
+                    <svg
+                      class="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="font-bold mt-3">Strony WWW</h3>
+                  <p class="text-sm secondary-text mt-1">Nowoczesne strony SSG/Headless.</p>
+                </a>
+                <a href="usluga-branding.html" class="mega-menu-item group/item rounded-md">
+                  <div class="icon-wrapper p-3 rounded-full">
+                    <svg
+                      class="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2 1M4 7l2-1M4 7v2.5M12 21.5v-2.5M12 19l2-1m-2 1l-2-1"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="font-bold mt-3">Branding</h3>
+                  <p class="text-sm secondary-text mt-1">Logo i identyfikacja wizualna.</p>
+                </a>
+                <a href="usluga-seo.html" class="mega-menu-item group/item rounded-md">
+                  <div class="icon-wrapper p-3 rounded-full">
+                    <svg
+                      class="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="font-bold mt-3">SEO / Marketing</h3>
+                  <p class="text-sm secondary-text mt-1">Pozycjonowanie i content.</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="realizacje.html" class="nav-link-gradient">Realizacje</a>
+          <a href="o-nas.html" class="nav-link-gradient">O Agencji</a>
+          <div class="relative group">
+            <button class="nav-link-gradient flex items-center gap-1">
+              <span>Wiedza</span>
+              <svg
+                class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="hidden group-hover:block absolute top-full left-0 w-48 glass-effect border border-white/10 rounded-2xl overflow-hidden py-2 shadow-xl"
+            >
+              <a href="blog.html" class="block px-4 py-2 hover:bg-white/10 transition-colors"
+                >Blog</a
+              >
+              <a href="slownik.html" class="block px-4 py-2 hover:bg-white/10 transition-colors"
+                >Słownik</a
+              >
+              <a href="faq.html" class="block px-4 py-2 hover:bg-white/10 transition-colors">FAQ</a>
+              <a
+                href="cennik.html"
+                class="block px-4 py-2 hover:bg-white/10 transition-colors font-bold"
+                >Cennik</a
+              >
+            </div>
+          </div>
+          <a href="kontakt.html" class="nav-link-gradient">Kontakt</a>
+          <button
+            id="theme-toggle"
+            aria-label="Przełącz motyw"
+            class="p-2.5 rounded-full text-gray-400 hover:bg-gray-100 dark:hover:bg-white/10 focus:outline-none transition-colors"
+          >
+            <svg
+              id="theme-toggle-dark-icon"
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+            <svg
+              id="theme-toggle-light-icon"
+              class="w-5 h-5 hidden"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 5.05A1 1 0 006.464 3.636L5.757 2.93A1 1 0 004.343 4.343l.707.707zm1.414 12.364a1 1 0 01-1.414 0l-.707-.707a1 1 0 111.414-1.414l.707.707a1 1 0 010 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z"
+              ></path>
+            </svg>
+          </button>
+          <a
+            href="kontakt.html"
+            class="bg-gradient-adaptive text-white px-5 py-2.5 rounded-lg text-sm font-bold shadow-lg hover:brightness-105 transition-all hover:-translate-y-0.5 duration-300"
+            >Wycena</a
+          >
+        </div>
+        <div class="flex items-center gap-4 md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="text-gray-300 focus:outline-none"
+            aria-label="Menu"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden px-6 pb-6 border-t border-white/10 glass-effect"
+      >
+        <div class="flex flex-col space-y-4 mt-4">
+          <div>
+            <button
+              id="mobile-services-toggle"
+              class="flex justify-between items-center w-full py-2 nav-link-gradient font-bold"
+            >
+              <span>Usługi</span>
+              <svg
+                id="mobile-services-arrow"
+                class="w-4 h-4 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="mobile-services-links"
+              class="pl-4 border-l-2 border-purple-500/30 space-y-2 mt-2 overflow-hidden max-h-0 transition-all duration-300"
+            >
+              <a
+                href="usluga-strony-www.html"
+                class="block py-1 text-sm secondary-text hover:text-white"
+                >Strony WWW</a
+              >
+              <a
+                href="usluga-branding.html"
+                class="block py-1 text-sm secondary-text hover:text-white"
+                >Branding</a
+              >
+              <a href="usluga-seo.html" class="block py-1 text-sm secondary-text hover:text-white"
+                >SEO</a
+              >
+            </div>
+          </div>
+          <a href="realizacje.html" class="nav-link-gradient py-2">Realizacje</a>
+          <a href="o-nas.html" class="nav-link-gradient py-2">O Agencji</a>
+          <a href="slownik.html" class="nav-link-gradient py-2">Słownik</a>
+          <a href="cennik.html" class="nav-link-gradient py-2 font-bold">Cennik</a>
+          <a href="kontakt.html" class="nav-link-gradient py-2">Kontakt</a>
+          <a href="kontakt.html" class="gradient-button text-center w-full mt-4">Darmowa Wycena</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="pt-32 pb-16 md:pt-40 md:pb-24 text-center overflow-hidden">
+      <div class="w-full max-w-7xl mx-auto px-6">
+        <h1 class="text-4xl md:text-6xl font-black tracking-wider leading-tight">
+          <div class="overflow-hidden">
+            <span
+              class="block nav-link-gradient animated-gradient-text hero-animate"
+              class="anim-delay-1"
+              >Transparentny Cennik</span
+            >
+          </div>
+        </h1>
+        <div class="overflow-hidden">
+          <p
+            class="text-lg md:text-xl secondary-text mt-4 max-w-2xl mx-auto hero-animate"
+            class="anim-delay-3"
+          >
+            Wierzymy w transparentność. Nasze pakiety są punktem wyjścia do rozmowy o Twoim
+            projekcie. Zero ukrytych kosztów.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="w-full max-w-7xl mx-auto px-6">
+      <section id="cennik-strony" class="py-16 md:py-24">
+        <h2 class="section-header text-center mb-16 animate-on-scroll animate-fade-in-down">
+          Pakiety <span class="nav-link-gradient">Strony WWW</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div
+            class="review-card p-8 flex flex-col animate-on-scroll animate-fade-in-up rounded-4xl border border-gray-100 dark:border-white/5 shadow-lg"
+          >
+            <div class="grow">
+              <h3 class="text-2xl font-bold">Start (One-Page)</h3>
+              <p class="secondary-text mt-2">
+                Idealna strona-wizytówka dla lokalnej firmy lub startupu.
+              </p>
+              <p class="text-4xl font-bold my-6">
+                od 2 500 <span class="text-lg secondary-text">PLN netto</span>
+              </p>
+              <ul class="space-y-3 secondary-text text-left">
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Strona typu One-Page (do 5 sekcji)
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Indywidualny projekt graficzny
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Technologia SSG (Ultra-szybkość)
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Idealny wygląd na każdym ekranie (RWD)
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Wstępna optymalizacja SEO (On-Page)
+                </li>
+              </ul>
+            </div>
+            <a
+              href="index.html#kontakt"
+              class="inline-block outline-button mt-8 text-center rounded-md"
+              >Zapytaj o pakiet</a
+            >
+          </div>
+
+          <div
+            class="review-card p-8 flex flex-col relative overflow-hidden border border-gray-100 dark:border-white/5 shadow-lg animate-on-scroll animate-fade-in-up rounded-4xl"
+          >
+            <span class="absolute top-0 right-0 text-xs font-bold px-4 py-1 rounded-bl-2xl"
+              >NAJPOPULARNIEJSZY</span
+            >
+            <div class="grow">
+              <h3 class="text-2xl font-bold">Biznes (Multi-Page)</h3>
+              <p class="secondary-text mt-2">
+                Rozbudowana strona firmowa z panelem do samodzielnej edycji.
+              </p>
+              <p class="text-4xl font-bold my-6">
+                od 6 000 <span class="text-lg secondary-text">PLN netto</span>
+              </p>
+              <ul class="space-y-3 secondary-text text-left">
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Wszystko z pakietu Start +
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Architektura Multi-Page (do 10 podstron)
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  ><span class="font-bold">Panel do edycji treści (Headless CMS)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Blog lub Aktualności (łatwe dodawanie)
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Gwarancja szybkości (zielone Core Web Vitals)
+                </li>
+              </ul>
+            </div>
+            <a
+              href="index.html#kontakt"
+              class="inline-block gradient-button mt-8 text-center rounded-md"
+              >Wybieram Biznes</a
+            >
+          </div>
+
+          <div
+            class="review-card p-8 flex flex-col animate-on-scroll animate-fade-in-up rounded-4xl border border-gray-100 dark:border-white/5 shadow-lg"
+            class="trans-delay-300"
+          >
+            <div class="grow">
+              <h3 class="text-2xl font-bold">Pro (E-commerce)</h3>
+              <p class="secondary-text mt-2">
+                Zaawansowany sklep internetowy lub dedykowana aplikacja webowa.
+              </p>
+              <p class="text-4xl font-bold my-6">
+                od 12 000 <span class="text-lg secondary-text">PLN netto</span>
+              </p>
+              <ul class="space-y-3 secondary-text text-left">
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Wszystko z pakietu Biznes +
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Integracja z platformą E-commerce (np. Shopify Headless)
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Integracja systemów płatności
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Konta użytkowników / Logowanie
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Dedykowane funkcjonalności (konfiguratory, itp.)
+                </li>
+              </ul>
+            </div>
+            <a
+              href="index.html#kontakt"
+              class="inline-block outline-button mt-8 text-center rounded-md"
+              >Wycena indywidualna</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="cennik-inne" class="py-16 md:py-24 border-t border-white/10">
+        <h2 class="section-header text-center mb-16 animate-on-scroll animate-fade-in-down">
+          Pakiety <span class="nav-link-gradient">Branding i SEO</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div
+            class="review-card p-8 flex flex-col animate-on-scroll animate-fade-in-up rounded-3xl border border-gray-100 dark:border-white/5 shadow-lg"
+          >
+            <div class="grow">
+              <h3 class="text-2xl font-bold">Branding: Logo Start</h3>
+              <p class="secondary-text mt-2">Profesjonalne logo dla Twojej nowej marki.</p>
+              <p class="text-4xl font-bold my-6">
+                od 1 500 <span class="text-lg secondary-text">PLN netto</span>
+              </p>
+              <ul class="space-y-3 secondary-text text-left">
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Warsztat strategiczny (online)
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >2-3 unikalne koncepcje logo
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Do 2 tur poprawek
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Komplet plików (wektor, raster)
+                </li>
+              </ul>
+            </div>
+            <a
+              href="index.html#kontakt"
+              class="inline-block outline-button mt-8 text-center rounded-md"
+              >Zamawiam logo</a
+            >
+          </div>
+
+          <div
+            class="review-card p-8 flex flex-col relative overflow-hidden border border-gray-100 dark:border-white/5 shadow-lg animate-on-scroll animate-fade-in-up rounded-3xl"
+          >
+            <span class="absolute top-0 right-0 text-xs font-bold px-4 py-1 rounded-bl-lg"
+              >NAJPOPULARNIEJSZY</span
+            >
+            <div class="grow">
+              <h3 class="text-2xl font-bold">Branding: Pełna Identyfikacja</h3>
+              <p class="secondary-text mt-2">Kompletny system wizualny dla Twojej marki.</p>
+              <p class="text-4xl font-bold my-6">
+                od 4 500 <span class="text-lg secondary-text">PLN netto</span>
+              </p>
+              <ul class="space-y-3 secondary-text text-left">
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Wszystko z pakietu Logo Start +
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  ><span class="font-bold">Księga Znaku (Brand Book)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Definicja palety kolorów i typografii
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Projekty materiałów (np. wizytówka, papier firmowy)
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Szablony social media
+                </li>
+              </ul>
+            </div>
+            <a
+              href="index.html#kontakt"
+              class="inline-block gradient-button mt-8 text-center rounded-md"
+              >Wybieram identyfikację</a
+            >
+          </div>
+
+          <div
+            class="review-card p-8 flex flex-col animate-on-scroll animate-fade-in-up rounded-3xl border border-gray-100 dark:border-white/5 shadow-lg"
+            class="trans-delay-300"
+          >
+            <div class="grow">
+              <h3 class="text-2xl font-bold">SEO i Content</h3>
+              <p class="secondary-text mt-2">Ciągłe pozycjonowanie i tworzenie treści (MRR).</p>
+              <p class="text-4xl font-bold my-6">
+                od 1 800 <span class="text-lg secondary-text">PLN netto / msc</span>
+              </p>
+              <ul class="space-y-3 secondary-text text-left">
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Audyt SEO i strategii na start
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Ciągła optymalizacja On-Page i techniczna
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Content Marketing (np. 2-4 artykuły / msc)
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Strategiczny Link Building (Off-Page)
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 text-green-400 mt-1 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path></svg
+                  >Comiesięczne, zrozumiałe raporty
+                </li>
+              </ul>
+            </div>
+            <a
+              href="index.html#kontakt"
+              class="inline-block outline-button mt-8 text-center rounded-md"
+              >Porozmawiajmy o SEO</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="faq-cennik" class="py-16 md:py-24 border-t border-white/10">
+        <h2 class="section-header text-center mb-16 animate-on-scroll animate-fade-in-down">
+          Pytania do <span class="nav-link-gradient">cennika</span>
+        </h2>
+        <div class="max-w-3xl mx-auto space-y-4">
+          <div class="faq-item animate-on-scroll animate-fade-in-up rounded-lg">
+            <button
+              class="faq-question w-full flex justify-between items-center text-left text-lg font-bold p-6"
+            >
+              <span>Dlaczego ceny podane są "od"?</span>
+              <svg
+                class="faq-toggle-icon w-6 h-6 shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                ></path>
+              </svg>
+            </button>
+            <div class="faq-answer px-6 pb-6 secondary-text">
+              <p>
+                Każdy projekt jest inny. Podane ceny to realne kwoty startowe dla projektów o
+                opisanym zakresie. Ostateczna cena zależy od Twoich unikalnych potrzeb, liczby
+                podstron, złożoności funkcji czy integracji. Traktuj to jako uczciwy punkt wyjścia
+                do rozmowy –
+                <a
+                  href="#calendly-placeholder"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="font-bold"
+                  >umów się na bezpłatną wycenę</a
+                >.
+              </p>
+            </div>
+          </div>
+          <div
+            class="faq-item animate-on-scroll animate-fade-in-up rounded-lg"
+            class="trans-delay-100"
+          >
+            <button
+              class="faq-question w-full flex justify-between items-center text-left text-lg font-bold p-6"
+            >
+              <span>Co jeśli potrzebuję czegoś spoza pakietu?</span>
+              <svg
+                class="faq-toggle-icon w-6 h-6 shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                ></path>
+              </svg>
+            </button>
+            <div class="faq-answer px-6 pb-6 secondary-text">
+              <p>
+                To żaden problem! Pakiety to tylko sugestie. Najczęściej pracujemy na wycenach
+                indywidualnych, dopasowanych w 100% do Twoich celów biznesowych. Pakiet "Pro" lub
+                opcja "Wycena Indywidualna" to najlepszy wybór, jeśli masz niestandardowe wymagania.
+                <a
+                  href="#calendly-placeholder"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="font-bold"
+                  >Porozmawiajmy o Twoim pomyśle</a
+                >.
+              </p>
+            </div>
+          </div>
+          <div
+            class="faq-item animate-on-scroll animate-fade-in-up rounded-lg"
+            class="trans-delay-200"
+          >
+            <button
+              class="faq-question w-full flex justify-between items-center text-left text-lg font-bold p-6"
+            >
+              <span>Czy oferujecie płatność w ratach?</span>
+              <svg
+                class="faq-toggle-icon w-6 h-6 shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                ></path>
+              </svg>
+            </button>
+            <div class="faq-answer px-6 pb-6 secondary-text">
+              <p>
+                Tak, przy większych projektach (zazwyczaj powyżej 5 000 zł netto) standardowo
+                dzielimy płatność na transze, np. 50% zaliczki na start prac i 50% po pełnej
+                akceptacji i wdrożeniu projektu. Jesteśmy elastyczni i zawsze ustalamy warunki
+                płatności indywidualnie przed rozpoczęciem współpracy.
+              </p>
+            </div>
+          </div>
+          <div
+            class="faq-item animate-on-scroll animate-fade-in-up rounded-lg"
+            class="trans-delay-300"
+          >
+            <button
+              class="faq-question w-full flex justify-between items-center text-left text-lg font-bold p-6"
+            >
+              <span>Jaki jest czas realizacji?</span>
+              <svg
+                class="faq-toggle-icon w-6 h-6 shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                ></path>
+              </svg>
+            </button>
+            <div class="faq-answer px-6 pb-6 secondary-text">
+              <p>
+                Czas realizacji zależy od wybranego pakietu i złożoności projektu. Orientacyjnie:
+                Pakiet Start (2-3 tyg.), Pakiet Biznes (4-6 tyg.), Pakiet Pro (6-10+ tyg.), Branding
+                Start (1-2 tyg.), Branding Pro (3-4 tyg.), SEO (ciągła usługa). Dokładny harmonogram
+                otrzymasz wraz z ofertą.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-16 text-center animate-on-scroll animate-fade-in-up" class="trans-delay-400">
+          <h3 class="text-2xl font-bold">Porozmawiajmy o Twoim budżecie</h3>
+          <p class="secondary-text mt-3 mb-6 max-w-lg mx-auto">
+            Masz konkretny budżet lub niestandardowy projekt? Świetnie. Umów się na krótką,
+            niezobowiązującą rozmowę, a my przygotujemy dla Ciebie dedykowaną propozycję.
+          </p>
+          <a
+            href="#calendly-placeholder"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block gradient-button rounded-md"
+          >
+            Umów bezpłatną konsultację
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================================= -->
+    <!-- FOOTER (identyczny z index.html) -->
+    <!-- ========================================= -->
+    <footer
+      class="relative pt-24 pb-12 overflow-hidden border-t border-gray-100 dark:border-white/5 bg-white/50 dark:bg-[#050505] transition-colors duration-300"
+    >
+      <div class="w-full max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div class="md:col-span-2">
+            <div class="footer-logo text-2xl font-display font-black tracking-tight mb-6">
+              DrawLab.
+            </div>
+            <p class="footer-desc max-w-sm mb-8 text-sm leading-relaxed">
+              Tworzymy cyfrową przyszłość dla ambitnych marek. Łączymy strategię, design i
+              technologię w jeden spójny ekosystem.
+            </p>
+          </div>
+          <div>
+            <h4 class="footer-col-title font-bold mb-4">Usługi</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="usluga-strony-www.html" class="footer-link">Strony WWW</a></li>
+              <li><a href="usluga-strony-www.html" class="footer-link">Sklepy e-Commerce</a></li>
+              <li><a href="usluga-branding.html" class="footer-link">Branding</a></li>
+              <li><a href="usluga-seo.html" class="footer-link">SEO & SXO</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-col-title font-bold mb-4">Firma</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="o-nas.html" class="footer-link">O nas</a></li>
+              <li><a href="index.html#proces" class="footer-link">Proces</a></li>
+              <li><a href="realizacje.html" class="footer-link">Portfolio</a></li>
+              <li><a href="kontakt.html" class="footer-link">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="footer-bottom-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs footer-copyright"
+        >
+          <p>&copy; 2025 DrawLab. Wszelkie prawa zastrzeżone.</p>
+          <div class="flex gap-6">
+            <a href="polityka-prywatnosci.html" class="footer-link">Polityka Prywatności</a>
+            <a href="polityka-prywatnosci.html" class="footer-link">Regulamin</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      id="cookie-consent-banner"
+      class="fixed bottom-4 left-4 right-4 md:left-auto md:w-auto z-9998 p-6 glass-effect rounded-lg shadow-2xl"
+    >
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4 max-w-4xl mx-auto">
+        <p class="text-sm secondary-text text-center md:text-left">
+          Ta strona wykorzystuje pliki cookie, aby zapewnić Ci najlepsze doświadczenia. Kontynuując,
+          zgadzasz się na naszą
+          <a href="polityka-prywatnosci.html" class="underline hover:text-white"
+            >politykę prywatności</a
+          >.
+        </p>
+        <div class="flex gap-4 shrink-0">
+          <button id="accept-cookies" class="gradient-button px-6! py-2! text-sm! rounded-md">
+            Akceptuj
+          </button>
+          <button id="decline-cookies" class="outline-button px-6! py-2! text-sm! rounded-md">
+            Odrzuć
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script type="module" src="js/modules/main.js"></script>
+  </body>
+</html>

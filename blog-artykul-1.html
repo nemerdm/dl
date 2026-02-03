@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="pl" class="scroll-smooth dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>
+      Niewidzialna przeszkoda w internecie - Dlaczego strona traci klientów | DrawLab Blog
+    </title>
+    <meta
+      name="description"
+      content="Czy Twoja strona jest niewidoczna dla Google? Poznaj niewidzialną przeszkodę – brak zgodności z W3C i dowiedz się, jak ją usunąć, by zwiększyć widoczność i sprzedaż."
+    />
+    <meta name="author" content="Piotr - DrawLab" />
+    <meta
+      name="keywords"
+      content="W3C, WCAG, dostępność stron, SEO, pozycjonowanie, semantyczny HTML, alt tagi, nagłówki h1 h2"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://drawlab.pl/blog-artykul-1.html" />
+    <meta property="og:title" content="Niewidzialna przeszkoda w internecie - DrawLab Blog" />
+    <meta
+      property="og:description"
+      content="Dowiedz się, dlaczego zgodność z W3C jest kluczowa dla Twojego SEO i sprzedaży."
+    />
+    <meta property="og:image" content="assets/images/og-cover.jpg" />
+    <meta property="article:published_time" content="2025-12-16" />
+    <meta property="article:section" content="SEO" />
+
+    <!-- Styles & Fonts -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @custom-variant dark (&:where(.dark, .dark *));
+      @theme {
+        --color-fresh-blue: #4ca9df;
+        --color-fresh-mint: #a1ffb3;
+        --color-bold-indigo: #42378f;
+        --color-bold-coral: #f53844;
+        --font-display: 'Unbounded', sans-serif;
+        --font-sans: 'Inter', system-ui, sans-serif;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0D0D0D" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F9FAFB" media="(prefers-color-scheme: light)" />
+  </head>
+
+  <body class="overflow-x-hidden">
+    <!-- Skip to Content -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-9999 focus:px-4 focus:py-2 focus:bg-purple-600 focus:text-white focus:rounded-lg focus:outline-none"
+    >
+      Przejdź do treści
+    </a>
+
+    <div id="scroll-progress-bar"></div>
+    <div id="preloader"><div class="preloader-logo">DL</div></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- NAWIGACJA -->
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 w-full bg-(--bg-color)/90 backdrop-blur-lg border-b border-gray-100 dark:border-white/5 transition-all duration-300"
+      id="main-nav"
+    >
+      <div class="w-full max-w-7xl mx-auto px-6 md:px-12 py-6 flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-2">
+          <img src="assets/images/logo.ver2.png" alt="DrawLab Logo" class="h-8 md:h-10 w-auto" />
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="realizacje.html" class="nav-link-gradient">Realizacje</a>
+          <a href="o-nas.html" class="nav-link-gradient">O Agencji</a>
+          <a href="blog.html" class="nav-link-gradient font-bold text-gradient-adaptive">Blog</a>
+          <a href="kontakt.html" class="nav-link-gradient">Kontakt</a>
+          <button
+            id="theme-toggle"
+            aria-label="Przełącz motyw"
+            class="p-2.5 rounded-full text-gray-400 hover:bg-gray-100 dark:hover:bg-white/10 focus:outline-none transition-colors"
+          >
+            <svg
+              id="theme-toggle-dark-icon"
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+            <svg
+              id="theme-toggle-light-icon"
+              class="w-5 h-5 hidden"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 5.05A1 1 0 006.464 3.636L5.757 2.93A1 1 0 004.343 4.343l.707.707zm1.414 12.364a1 1 0 01-1.414 0l-.707-.707a1 1 0 111.414-1.414l.707.707a1 1 0 010 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="flex items-center gap-4 md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="text-gray-300 focus:outline-none"
+            aria-label="Menu"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden px-6 pb-6 border-t border-white/10 glass-effect"
+      >
+        <div class="flex flex-col space-y-4 mt-4">
+          <a href="blog.html" class="nav-link-gradient py-2 font-bold">← Powrót do bloga</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content" class="w-full pt-32 pb-24">
+      <!-- ARTICLE HEADER -->
+      <header class="w-full px-6 md:px-12 mb-12">
+        <div class="max-w-4xl mx-auto">
+          <a
+            href="blog.html"
+            class="inline-flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors mb-8"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+            Powrót do bloga
+          </a>
+
+          <div class="flex items-center gap-4 text-sm font-mono text-gray-400 mb-6">
+            <span
+              class="px-3 py-1 rounded-full bg-bold-coral/10 text-bold-coral dark:bg-bold-coral/20"
+              >SEO</span
+            >
+            <span>16 grudnia 2025</span>
+            <span class="w-1 h-1 rounded-full bg-gray-500"></span>
+            <span>8 min czytania</span>
+          </div>
+
+          <h1 class="text-3xl md:text-5xl font-display font-bold leading-tight mb-6">
+            Niewidzialna przeszkoda w internecie: Dlaczego Twoja strona traci klientów i nie widać
+            jej w Google
+          </h1>
+
+          <p class="text-xl secondary-text leading-relaxed">
+            Czy zdajesz sobie sprawę, że Twoja strona internetowa może być niewidoczna dla
+            wyszukiwarki Google i trudna do użycia dla wielu osób? Poznaj "niewidzialną przeszkodę"
+            – brak zgodności z W3C.
+          </p>
+        </div>
+      </header>
+
+      <!-- ARTICLE CONTENT -->
+      <article class="w-full px-6 md:px-12">
+        <div
+          class="max-w-4xl mx-auto prose prose-lg dark:prose-invert prose-headings:font-display prose-headings:font-bold prose-a:text-fresh-blue dark:prose-a:text-bold-coral prose-strong:text-white"
+        >
+          <img
+            src="assets/images/blog-feat-1.png"
+            alt="Ilustracja przedstawiająca sklep za mgłą i otwarty sklep obok"
+            class="w-full h-auto rounded-2xl mb-12 shadow-2xl skew-y-1 transform transition-transform hover:skew-y-0 duration-500 block mx-auto border border-white/10"
+            loading="eager"
+          />
+          <p>
+            W dzisiejszym świecie internetu każdy z nas – zwłaszcza jeśli prowadzisz własną
+            działalność – chce być widoczny i odnosić sukcesy. Często skupiamy się na ciekawych
+            kampaniach reklamowych, na tym, żeby nasza strona dobrze wyglądała, czy na dobieraniu
+            odpowiednich słów kluczowych. Ale pod tym wszystkim może ukrywać się "niewidzialna
+            przeszkoda", która skutecznie blokuje Twoją stronę.
+          </p>
+
+          <p>
+            Możesz nawet nie wiedzieć, że błędy w kodzie strony, brak opisów pod zdjęciami (tak
+            zwanych atrybutów ALT) czy źle uporządkowane nagłówki, mogą powoli niszczyć pozycję
+            Twojej strony w Google i zmniejszać Twoją sprzedaż.
+          </p>
+
+          <h2>Czym Jest W3C i Dlaczego Jego Wytyczne Są Kluczowe?</h2>
+
+          <p>
+            W3C to międzynarodowa grupa ekspertów, która tworzy zasady i standardy dla internetu.
+            Jednym z ich najważniejszych obszarów jest
+            <strong
+              >dostępność stron internetowych (czyli zasady WCAG – Web Content Accessibility
+              Guidelines)</strong
+            >. Chodzi o to, żeby każda strona była łatwa w obsłudze dla wszystkich.
+          </p>
+
+          <p>
+            Zgodność z zasadami W3C to niezwykle skuteczne narzędzie, które
+            <strong
+              >bezpośrednio pomaga Twojej stronie lepiej pozycjonować się w Google i zwiększa
+              sprzedaż</strong
+            >. Dlaczego? Bo zasady dostępności to po prostu
+            <strong>dobre zasady tworzenia stron internetowych</strong>.
+          </p>
+
+          <h2>Niewidzialna Przeszkoda: Jak Widzą Ją Google i Użytkownicy?</h2>
+
+          <p>
+            Wyobraź sobie, że wyszukiwarka Google to ktoś, kto nie widzi i próbuje zrozumieć Twoją
+            stronę, polegając tylko na jej budowie i opisach. Jeśli te są chaotyczne albo ich
+            brakuje, Google po prostu się „gubi".
+          </p>
+
+          <h3>Brak opisów ALT dla zdjęć</h3>
+          <ul>
+            <li>
+              <strong>Dla wyszukiwarki Google:</strong> Zdjęcia bez opisów <code>alt</code> są dla
+              Google niewidoczne. To niewykorzystana szansa dla Twojego pozycjonowania!
+            </li>
+            <li>
+              <strong>Dla osób z niepełnosprawnościami:</strong> Specjalny program czytający stronę
+              nie potrafi opisać, co jest na obrazku.
+            </li>
+          </ul>
+
+          <h3>Słaba kolejność nagłówków (h1, h2, h3...)</h3>
+          <ul>
+            <li>
+              <strong>Dla wyszukiwarki Google:</strong> Jeśli masz na stronie kilka nagłówków
+              <code>h1</code> lub przeskakujesz między poziomami, Google nie jest w stanie jasno
+              określić, co jest najważniejsze.
+            </li>
+            <li>
+              <strong>Dla osób z niepełnosprawnościami:</strong> Osoby korzystające z czytników
+              ekranu często szybko przeglądają stronę, skacząc po nagłówkach.
+            </li>
+          </ul>
+
+          <h3>Nieczytelny i niesemantyczny kod</h3>
+          <ul>
+            <li>
+              <strong>Dla wyszukiwarki Google:</strong> Jeśli cała strona jest zbudowana głównie z
+              tagów <code>&lt;div&gt;</code>, Google trudno odróżnić główną zawartość od menu czy
+              stopki.
+            </li>
+            <li>
+              <strong>Dla osób z niepełnosprawnościami:</strong> Bez uporządkowanej struktury,
+              programy czytające strony nie są w stanie rozpoznać części strony.
+            </li>
+          </ul>
+
+          <h2>Jak Poprawa Dostępności Przekłada Się na Lepsze Pozycje w Google?</h2>
+
+          <h3>1. Opisy ALT: Widoczność Zdjęć = Widoczność w Wyszukiwarce</h3>
+          <p><strong>Zamiast:</strong> <code>&lt;img src="produkt.jpg"&gt;</code></p>
+          <p>
+            <strong>Użyj:</strong>
+            <code>&lt;img src="produkt.jpg" alt="Elegancka sukienka wieczorowa z koronki"&gt;</code>
+          </p>
+
+          <h3>2. Kolejność Nagłówków: Przejrzystość Struktury = Wiarygodność Treści</h3>
+          <p>
+            Na każdej stronie powinien być tylko jeden <code>&lt;h1&gt;</code> (główny tytuł),
+            <code>&lt;h2&gt;</code> to nagłówki głównych sekcji, a <code>&lt;h3&gt;</code> to
+            nagłówki podsekcji.
+          </p>
+
+          <h3>3. Semantyczny HTML: Przejrzysty Kod = Szybkość i Indeksowanie</h3>
+          <p>
+            Używaj znaczników HTML5: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+            <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>,
+            <code>&lt;footer&gt;</code>.
+          </p>
+
+          <h2>Jak Sprawdzić Zgodność Twojej Strony?</h2>
+
+          <ul>
+            <li>
+              <strong>Google Lighthouse:</strong> Narzędzie wbudowane w Chrome do sprawdzania
+              dostępności i SEO.
+            </li>
+            <li><strong>PageSpeed Insights:</strong> Pokazuje szybkość ładowania i problemy UX.</li>
+            <li>
+              <strong>WAVE Web Accessibility Tool:</strong> Specjalistyczne narzędzie do analizy
+              dostępności.
+            </li>
+            <li><strong>W3C Validator:</strong> Sprawdza poprawność kodu HTML i CSS.</li>
+          </ul>
+
+          <h2>Podsumowanie: Dostępność to Nie Obowiązek, Lecz Inwestycja</h2>
+
+          <p>
+            Kiedy Twoja strona nie spełnia standardów W3C, nie tylko wykluczasz część użytkowników,
+            ale także osłabiasz swoje pozycje w Google. Zrozumienie i zastosowanie podstawowych
+            zasad dostępności to jeden z najprostszych sposobów na to, by
+            <strong
+              >Twoja strona automatycznie zyskała wyższą pozycję w Google, przyciągnęła więcej
+              odwiedzających i zwiększyła sprzedaż</strong
+            >.
+          </p>
+
+          <div
+            class="p-6 rounded-2xl bg-linear-to-br from-bold-indigo/10 to-bold-coral/10 border border-white/10 mt-12"
+          >
+            <p class="text-sm font-bold uppercase tracking-wider text-bold-coral mb-2">
+              💡 Ciekawostka
+            </p>
+            <p class="text-base">
+              Badanie SEMrush pokazało, że strony które wdrożyły rozwiązania zgodne z WCAG,
+              odnotowały średnio <strong>12% więcej odwiedzin z Google</strong>, a aż 73,4% z nich
+              zauważyło wzrost ruchu na swojej stronie.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- CTA -->
+      <section class="w-full px-6 md:px-12 mt-24">
+        <div
+          class="max-w-4xl mx-auto p-10 rounded-3xl glass-effect border border-white/10 text-center"
+        >
+          <h2 class="text-2xl md:text-3xl font-bold mb-4">
+            Chcesz sprawdzić <span class="text-gradient-adaptive">swoją stronę?</span>
+          </h2>
+          <p class="text-lg secondary-text mb-8">
+            Wykonamy bezpłatny audyt dostępności i SEO Twojej strony.
+          </p>
+          <a
+            href="kontakt.html"
+            class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-adaptive text-white font-bold rounded-lg shadow-lg hover:brightness-105 transition-all hover:-translate-y-0.5"
+          >
+            Zamów bezpłatny audyt
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-white/10">
+      <div class="w-full max-w-7xl mx-auto px-6 md:px-12">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+          <div class="text-center md:text-left">
+            <a href="index.html" class="flex items-center justify-center md:justify-start gap-2">
+              <img src="assets/images/logo.ver2.png" alt="DrawLab Logo" class="h-8 w-auto" />
+            </a>
+            <p class="secondary-text text-sm mt-2">Agencja Kreatywna z Radomia</p>
+          </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-white/10 text-center footer-text text-sm">
+          <p>
+            &copy; 2025 DrawLab. Wszelkie prawa zastrzeżone. |
+            <a href="polityka-prywatnosci.html" class="hover:underline">Polityka Prywatności</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Follow Up Button -->
+    <button id="follow-up-btn" class="follow-up-btn" aria-label="Powrót na górę">
+      <span class="follow-up-text">DO GÓRY</span>
+      <div class="follow-up-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script type="module" src="js/modules/main.js"></script>
+  </body>
+</html>

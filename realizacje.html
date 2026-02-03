@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="pl" class="scroll-smooth dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>Realizacje i Portfolio - Agencja Kreatywna DrawLab Radom</title>
+    <meta
+      name="description"
+      content="Zobacz nasze realizacje: strony WWW, branding i projekty SEO. Portfolio agencji kreatywnej DrawLab z Radomia. Sprawdź case studies naszych klientów."
+    />
+    <meta name="author" content="Piotr - DrawLab" />
+    <meta
+      name="keywords"
+      content="portfolio agencja kreatywna, realizacje strony www, case study, projekty branding, radom"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://drawlab.pl/realizacje.html" />
+    <meta property="og:title" content="Portfolio i Realizacje - DrawLab" />
+    <meta
+      property="og:description"
+      content="Zobacz projekty, które stworzyliśmy dla naszych klientów. Strony WWW, branding, SEO."
+    />
+    <meta property="og:image" content="assets/images/og-cover.jpg" />
+
+    <!-- Styles & Fonts -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-fresh-blue: #4ca9df;
+        --color-fresh-mint: #a1ffb3;
+        --color-bold-indigo: #42378f;
+        --color-bold-coral: #f53844;
+        --font-display: 'Unbounded', sans-serif;
+        --font-sans: 'Inter', system-ui, sans-serif;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0D0D0D" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F9FAFB" media="(prefers-color-scheme: light)" />
+  </head>
+
+  <body class="overflow-x-hidden">
+    <!-- Skip to Content (Accessibility) -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-9999 focus:px-4 focus:py-2 focus:bg-purple-600 focus:text-white focus:rounded-lg focus:outline-none"
+    >
+      Przejdź do treści
+    </a>
+
+    <!-- Pasek postępu scrollowania -->
+    <div id="scroll-progress-bar"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="preloader-logo">DL</div>
+    </div>
+
+    <!-- Kursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- ========================================= -->
+    <!-- NAWIGACJA -->
+    <!-- ========================================= -->
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 w-full bg-(--bg-color)/90 backdrop-blur-lg border-b border-gray-100 dark:border-white/5 transition-all duration-300"
+      id="main-nav"
+    >
+      <div class="w-full max-w-7xl mx-auto px-6 md:px-12 py-6 flex justify-between items-center">
+        <!-- LOGO -->
+        <a href="index.html" class="flex items-center gap-2">
+          <img src="assets/images/logo.ver2.png" alt="DrawLab Logo" class="h-8 md:h-10 w-auto" />
+        </a>
+
+        <!-- DESKTOP MENU -->
+        <div class="hidden md:flex items-center space-x-8">
+          <!-- USŁUGI (Mega Menu) -->
+          <div class="relative group">
+            <button
+              class="nav-link-gradient flex items-center gap-1"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span>Oferta</span>
+              <svg
+                class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="mega-menu hidden group-hover:block group-focus-within:block absolute top-full left-1/2 -translate-x-1/2 z-51 glass-effect shadow-2xl rounded-2xl overflow-hidden"
+            >
+              <div class="grid grid-cols-3 gap-6 pt-10 pb-8 px-8">
+                <a href="usluga-strony-www.html" class="mega-menu-item group/item rounded-md">
+                  <div class="icon-wrapper p-3 rounded-full bg-gradient-main">
+                    <svg
+                      class="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="font-bold mt-3 group-hover/item:text-white transition-colors">
+                    Strony WWW
+                  </h3>
+                  <p class="text-sm secondary-text mt-1">Nowoczesne strony SSG/Headless.</p>
+                </a>
+                <a href="usluga-branding.html" class="mega-menu-item group/item rounded-md">
+                  <div class="icon-wrapper p-3 rounded-full bg-gradient-main">
+                    <svg
+                      class="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="font-bold mt-3 group-hover/item:text-white transition-colors">
+                    Branding
+                  </h3>
+                  <p class="text-sm secondary-text mt-1">Logo i identyfikacja wizualna.</p>
+                </a>
+                <a href="usluga-seo.html" class="mega-menu-item group/item rounded-md">
+                  <div class="icon-wrapper p-3 rounded-full bg-gradient-main">
+                    <svg
+                      class="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="font-bold mt-3 group-hover/item:text-white transition-colors">
+                    SEO / Marketing
+                  </h3>
+                  <p class="text-sm secondary-text mt-1">Pozycjonowanie i content.</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- LINKI -->
+          <a href="realizacje.html" class="nav-link-gradient font-bold text-gradient-adaptive"
+            >Realizacje</a
+          >
+          <a href="o-nas.html" class="nav-link-gradient">O Agencji</a>
+
+          <!-- WIEDZA (Dropdown) -->
+          <div class="relative group">
+            <button class="nav-link-gradient flex items-center gap-1">
+              <span>Wiedza</span>
+              <svg
+                class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="hidden group-hover:block absolute top-full left-0 w-48 glass-effect border border-white/10 rounded-2xl overflow-hidden py-2 shadow-xl"
+            >
+              <a href="blog.html" class="block px-4 py-2 hover:bg-white/10 transition-colors"
+                >Blog</a
+              >
+              <a href="slownik.html" class="block px-4 py-2 hover:bg-white/10 transition-colors"
+                >Słownik</a
+              >
+              <a href="faq.html" class="block px-4 py-2 hover:bg-white/10 transition-colors">FAQ</a>
+              <a href="cennik.html" class="block px-4 py-2 hover:bg-white/10 transition-colors"
+                >Cennik</a
+              >
+            </div>
+          </div>
+
+          <!-- KONTAKT -->
+          <a href="kontakt.html" class="nav-link-gradient">Kontakt</a>
+
+          <!-- THEME TOGGLE -->
+          <button
+            id="theme-toggle"
+            aria-label="Przełącz motyw"
+            class="p-2.5 rounded-full text-gray-400 hover:bg-gray-100 dark:hover:bg-white/10 focus:outline-none transition-colors"
+          >
+            <svg
+              id="theme-toggle-dark-icon"
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+            <svg
+              id="theme-toggle-light-icon"
+              class="w-5 h-5 hidden"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 5.05A1 1 0 006.464 3.636L5.757 2.93A1 1 0 004.343 4.343l.707.707zm1.414 12.364a1 1 0 01-1.414 0l-.707-.707a1 1 0 111.414-1.414l.707.707a1 1 0 010 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- GŁÓWNE CTA -->
+          <a
+            href="kontakt.html#brief-form-wrapper"
+            class="bg-gradient-adaptive text-white px-5 py-2.5 rounded-lg text-sm font-bold shadow-lg hover:brightness-105 transition-all hover:-translate-y-0.5 duration-300"
+          >
+            Wycena
+          </a>
+        </div>
+
+        <!-- MOBILE MENU BUTTON -->
+        <div class="flex items-center gap-4 md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="text-gray-300 focus:outline-none"
+            aria-label="Menu"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- MOBILE MENU CONTENT -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden px-6 pb-6 border-t border-white/10 glass-effect"
+      >
+        <div class="flex flex-col space-y-4 mt-4">
+          <a href="usluga-strony-www.html" class="nav-link-gradient py-2">Strony WWW</a>
+          <a href="usluga-branding.html" class="nav-link-gradient py-2">Branding</a>
+          <a href="usluga-seo.html" class="nav-link-gradient py-2">SEO</a>
+          <a href="realizacje.html" class="nav-link-gradient py-2 font-bold">Realizacje</a>
+          <a href="o-nas.html" class="nav-link-gradient py-2">O Agencji</a>
+          <a href="blog.html" class="nav-link-gradient py-2">Blog</a>
+          <a href="faq.html" class="nav-link-gradient py-2">FAQ</a>
+          <a href="cennik.html" class="nav-link-gradient py-2">Cennik</a>
+          <a href="kontakt.html" class="nav-link-gradient py-2">Kontakt</a>
+          <a href="kontakt.html#brief-form-wrapper" class="gradient-button text-center w-full mt-4">
+            Wycena Projektu
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========================================= -->
+    <!-- HERO SECTION -->
+    <!-- ========================================= -->
+    <header
+      id="hero"
+      class="relative min-h-[60vh] flex flex-col items-center justify-center text-center px-6 pt-32 pb-16"
+    >
+      <!-- LABEL -->
+      <div class="mb-6 animate-enter flex items-center justify-center gap-4">
+        <span class="h-[2px] w-8 bg-gradient-adaptive rounded-full"></span>
+        <span
+          class="text-sm md:text-base font-extrabold tracking-[0.25em] uppercase text-gradient-adaptive"
+        >
+          Portfolio
+        </span>
+        <span class="h-[2px] w-8 bg-gradient-adaptive rounded-full"></span>
+      </div>
+
+      <!-- H1 HEADLINE -->
+      <h1
+        class="text-4xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight mb-6 animate-enter delay-1 max-w-5xl"
+      >
+        Nasze <span class="text-gradient-adaptive">Realizacje</span>
+      </h1>
+
+      <!-- LEAD -->
+      <p
+        class="text-lg md:text-xl secondary-text max-w-3xl mb-8 leading-relaxed animate-enter delay-2"
+      >
+        Każdy projekt to historia sukcesu. Zobacz jak pomagamy firmom rosnąć dzięki
+        <strong class="text-primary">nowoczesnym technologiom</strong> i przemyślanemu designowi.
+      </p>
+
+      <!-- FILTRY -->
+      <div class="flex flex-wrap justify-center gap-3 animate-enter delay-3">
+        <button
+          class="filter-btn active px-5 py-2 rounded-full text-sm font-medium transition-all"
+          data-filter="all"
+        >
+          Wszystkie
+        </button>
+        <button
+          class="filter-btn px-5 py-2 rounded-full text-sm font-medium transition-all"
+          data-filter="web"
+        >
+          Strony WWW
+        </button>
+        <button
+          class="filter-btn px-5 py-2 rounded-full text-sm font-medium transition-all"
+          data-filter="branding"
+        >
+          Branding
+        </button>
+        <button
+          class="filter-btn px-5 py-2 rounded-full text-sm font-medium transition-all"
+          data-filter="seo"
+        >
+          SEO
+        </button>
+      </div>
+    </header>
+
+    <!-- ========================================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ========================================= -->
+    <main id="main-content" class="w-full px-6 md:px-12 pb-24">
+      <div class="max-w-7xl mx-auto">
+        <!-- PORTFOLIO GRID -->
+        <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- PROJEKT 1: E-commerce -->
+          <article
+            class="portfolio-item group relative rounded-2xl overflow-hidden animate-on-scroll animate-fade-in-up"
+            data-category="web"
+          >
+            <a href="case-study-wzor.html" class="block">
+              <div class="aspect-4/3 overflow-hidden">
+                <img
+                  src="assets/images/portfolio-ecommerce.png"
+                  alt="Projekt e-commerce dla TechStore"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+                >
+                  <span
+                    class="inline-block px-3 py-1 bg-fresh-blue/20 text-fresh-blue text-xs font-semibold rounded-full mb-3"
+                  >
+                    E-commerce
+                  </span>
+                  <h3 class="text-xl font-bold text-white mb-2">TechStore Premium</h3>
+                  <p class="text-gray-300 text-sm">
+                    Sklep internetowy z elektroniką. +156% konwersji.
+                  </p>
+                </div>
+              </div>
+              <!-- Default overlay -->
+              <div
+                class="absolute bottom-0 left-0 right-0 p-6 bg-linear-to-t from-black/90 to-transparent group-hover:opacity-0 transition-opacity duration-300"
+              >
+                <span
+                  class="inline-block px-3 py-1 bg-white/10 text-white/80 text-xs font-semibold rounded-full mb-2"
+                >
+                  Strona WWW
+                </span>
+                <h3 class="text-lg font-bold text-white">TechStore Premium</h3>
+              </div>
+            </a>
+          </article>
+
+          <!-- PROJEKT 2: Branding -->
+          <article
+            class="portfolio-item group relative rounded-2xl overflow-hidden animate-on-scroll animate-fade-in-up trans-delay-100"
+            data-category="branding"
+          >
+            <a href="case-study-wzor.html" class="block">
+              <div class="aspect-4/3 overflow-hidden">
+                <img
+                  src="assets/images/portfolio-branding.png"
+                  alt="Projekt brandingowy dla Luxe Hotels"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+                >
+                  <span
+                    class="inline-block px-3 py-1 bg-bold-coral/20 text-bold-coral text-xs font-semibold rounded-full mb-3"
+                  >
+                    Identyfikacja wizualna
+                  </span>
+                  <h3 class="text-xl font-bold text-white mb-2">Luxe Hotels Group</h3>
+                  <p class="text-gray-300 text-sm">Pełny rebranding sieci hotelowej premium.</p>
+                </div>
+              </div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-6 bg-linear-to-t from-black/90 to-transparent group-hover:opacity-0 transition-opacity duration-300"
+              >
+                <span
+                  class="inline-block px-3 py-1 bg-white/10 text-white/80 text-xs font-semibold rounded-full mb-2"
+                >
+                  Branding
+                </span>
+                <h3 class="text-lg font-bold text-white">Luxe Hotels Group</h3>
+              </div>
+            </a>
+          </article>
+
+          <!-- PROJEKT 3: SaaS Dashboard -->
+          <article
+            class="portfolio-item group relative rounded-2xl overflow-hidden animate-on-scroll animate-fade-in-up trans-delay-200"
+            data-category="web"
+          >
+            <a href="case-study-wzor.html" class="block">
+              <div class="aspect-4/3 overflow-hidden">
+                <img
+                  src="assets/images/portfolio-webapp.png"
+                  alt="Aplikacja SaaS DataFlow Analytics"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+                >
+                  <span
+                    class="inline-block px-3 py-1 bg-fresh-mint/20 text-fresh-mint text-xs font-semibold rounded-full mb-3"
+                  >
+                    Aplikacja SaaS
+                  </span>
+                  <h3 class="text-xl font-bold text-white mb-2">DataFlow Analytics</h3>
+                  <p class="text-gray-300 text-sm">
+                    Dashboard analityczny dla enterprise. React + TypeScript.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-6 bg-linear-to-t from-black/90 to-transparent group-hover:opacity-0 transition-opacity duration-300"
+              >
+                <span
+                  class="inline-block px-3 py-1 bg-white/10 text-white/80 text-xs font-semibold rounded-full mb-2"
+                >
+                  Web App
+                </span>
+                <h3 class="text-lg font-bold text-white">DataFlow Analytics</h3>
+              </div>
+            </a>
+          </article>
+
+          <!-- PROJEKT 4: SEO -->
+          <article
+            class="portfolio-item group relative rounded-2xl overflow-hidden animate-on-scroll animate-fade-in-up trans-delay-100"
+            data-category="seo"
+          >
+            <a href="case-study-wzor.html" class="block">
+              <div
+                class="aspect-4/3 overflow-hidden bg-linear-to-br from-bold-indigo to-fresh-blue flex items-center justify-center"
+              >
+                <div class="text-center p-8">
+                  <div class="text-6xl font-black text-white mb-2">+340%</div>
+                  <div class="text-white/80">wzrost ruchu organicznego</div>
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+                >
+                  <span
+                    class="inline-block px-3 py-1 bg-bold-indigo/20 text-bold-indigo text-xs font-semibold rounded-full mb-3"
+                  >
+                    Pozycjonowanie
+                  </span>
+                  <h3 class="text-xl font-bold text-white mb-2">Kancelaria Prawna XYZ</h3>
+                  <p class="text-gray-300 text-sm">
+                    Kompleksowa strategia SEO. Top 3 na kluczowe frazy.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-6 bg-linear-to-t from-black/90 to-transparent group-hover:opacity-0 transition-opacity duration-300"
+              >
+                <span
+                  class="inline-block px-3 py-1 bg-white/10 text-white/80 text-xs font-semibold rounded-full mb-2"
+                >
+                  SEO
+                </span>
+                <h3 class="text-lg font-bold text-white">Kancelaria Prawna XYZ</h3>
+              </div>
+            </a>
+          </article>
+
+          <!-- PROJEKT 5: Branding -->
+          <article
+            class="portfolio-item group relative rounded-2xl overflow-hidden animate-on-scroll animate-fade-in-up trans-delay-200"
+            data-category="branding"
+          >
+            <a href="case-study-wzor.html" class="block">
+              <div
+                class="aspect-4/3 overflow-hidden bg-linear-to-br from-gray-900 to-gray-700 flex items-center justify-center"
+              >
+                <div class="text-8xl font-black text-white/10">LOGO</div>
+              </div>
+              <div
+                class="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+                >
+                  <span
+                    class="inline-block px-3 py-1 bg-bold-coral/20 text-bold-coral text-xs font-semibold rounded-full mb-3"
+                  >
+                    Logo Design
+                  </span>
+                  <h3 class="text-xl font-bold text-white mb-2">StartupFlow</h3>
+                  <p class="text-gray-300 text-sm">
+                    Logo i system identyfikacji dla startupu fintech.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-6 bg-linear-to-t from-black/90 to-transparent group-hover:opacity-0 transition-opacity duration-300"
+              >
+                <span
+                  class="inline-block px-3 py-1 bg-white/10 text-white/80 text-xs font-semibold rounded-full mb-2"
+                >
+                  Branding
+                </span>
+                <h3 class="text-lg font-bold text-white">StartupFlow</h3>
+              </div>
+            </a>
+          </article>
+
+          <!-- PROJEKT 6: Web -->
+          <article
+            class="portfolio-item group relative rounded-2xl overflow-hidden animate-on-scroll animate-fade-in-up trans-delay-300"
+            data-category="web"
+          >
+            <a href="case-study-wzor.html" class="block">
+              <div
+                class="aspect-4/3 overflow-hidden bg-linear-to-br from-fresh-blue to-fresh-mint flex items-center justify-center"
+              >
+                <div class="text-center p-8">
+                  <div class="text-5xl font-black text-white mb-2">99/100</div>
+                  <div class="text-white/80">PageSpeed Score</div>
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+                >
+                  <span
+                    class="inline-block px-3 py-1 bg-fresh-blue/20 text-fresh-blue text-xs font-semibold rounded-full mb-3"
+                  >
+                    Astro + React
+                  </span>
+                  <h3 class="text-xl font-bold text-white mb-2">Eco Solutions</h3>
+                  <p class="text-gray-300 text-sm">
+                    Strona korporacyjna. Architektura SSG/Headless.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-6 bg-linear-to-t from-black/90 to-transparent group-hover:opacity-0 transition-opacity duration-300"
+              >
+                <span
+                  class="inline-block px-3 py-1 bg-white/10 text-white/80 text-xs font-semibold rounded-full mb-2"
+                >
+                  Strona WWW
+                </span>
+                <h3 class="text-lg font-bold text-white">Eco Solutions</h3>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <!-- CTA SECTION -->
+        <section class="mt-24 text-center animate-on-scroll animate-fade-in-up">
+          <div class="max-w-3xl mx-auto p-12 rounded-3xl glass-effect border border-white/10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Chcesz być <span class="text-gradient-adaptive">następny?</span>
+            </h2>
+            <p class="text-lg secondary-text mb-8">
+              Porozmawiajmy o Twoim projekcie. Bezpłatna konsultacja, bez zobowiązań.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="kontakt.html#brief-form-wrapper"
+                class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-adaptive text-white font-bold rounded-lg shadow-lg hover:brightness-105 transition-all hover:-translate-y-0.5"
+              >
+                Rozpocznij projekt
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="cennik.html"
+                class="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/20 text-white font-bold rounded-lg hover:bg-white/5 transition-all"
+              >
+                Zobacz cennik
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ========================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================= -->
+    <footer
+      class="relative pt-24 pb-12 overflow-hidden border-t border-gray-100 dark:border-white/5 bg-white/50 dark:bg-[#050505] transition-colors duration-300"
+    >
+      <div class="w-full max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+          <div class="text-center md:text-left">
+            <a href="index.html" class="flex items-center justify-center md:justify-start gap-2">
+              <img src="assets/images/logo.ver2.png" alt="DrawLab Logo" class="h-8 w-auto" />
+            </a>
+            <p class="secondary-text text-sm mt-2">Agencja Kreatywna z Radomia</p>
+          </div>
+          <div class="flex gap-6">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+              aria-label="LinkedIn"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+              aria-label="GitHub"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+              aria-label="Behance"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-white/10 text-center footer-text text-sm">
+          <p>
+            &copy; 2025 DrawLab. Wszelkie prawa zastrzeżone. |
+            <a href="polityka-prywatnosci.html" class="hover:underline">Polityka Prywatności</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div
+      id="cookie-consent-banner"
+      class="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:w-auto z-9998 p-6 glass-effect rounded-lg shadow-2xl hidden"
+    >
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4 max-w-xl">
+        <p class="text-sm secondary-text text-center md:text-left">
+          Ta strona wykorzystuje pliki cookie.
+          <a href="polityka-prywatnosci.html" class="underline hover:text-white"
+            >Polityka prywatności</a
+          >.
+        </p>
+        <div class="flex gap-3 shrink-0">
+          <button id="accept-cookies" class="gradient-button px-5! py-2! text-sm! rounded-md">
+            Akceptuj
+          </button>
+          <button id="decline-cookies" class="outline-button px-5! py-2! text-sm! rounded-md">
+            Odrzuć
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script type="module" src="js/modules/main.js"></script>
+
+    <!-- Portfolio Filter Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+          btn.addEventListener('click', function () {
+            // Update active state
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+
+            const filter = this.dataset.filter;
+
+            portfolioItems.forEach(item => {
+              if (filter === 'all' || item.dataset.category === filter) {
+                item.style.display = 'block';
+                item.style.animation = 'fadeInUp 0.5s ease forwards';
+              } else {
+                item.style.display = 'none';
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

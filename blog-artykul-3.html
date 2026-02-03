@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="pl" class="scroll-smooth dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Czy Twoja strona to leniwy pracownik? Jak UX decyduje o sprzedaży | DrawLab Blog</title>
+    <meta
+      name="description"
+      content="Masz ruch z Google, masz piękne logo, ale telefon wciąż milczy? Dowiedz się, czym jest UX i dlaczego traktowanie strony jako najlepszego handlowca to jedyna droga do wysokiej sprzedaży."
+    />
+    <meta name="author" content="Piotr - DrawLab" />
+    <meta
+      name="keywords"
+      content="UX, user experience, doświadczenie użytkownika, konwersja, sprzedaż online, CTA, ścieżka klienta"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://drawlab.pl/blog-artykul-3.html" />
+    <meta property="og:title" content="Czy Twoja strona to leniwy pracownik? - DrawLab Blog" />
+    <meta
+      property="og:description"
+      content="Jak UX decyduje o tym, czy klient kupi, czy ucieknie."
+    />
+    <meta property="og:image" content="assets/images/og-cover.jpg" />
+    <meta property="article:published_time" content="2025-12-16" />
+    <meta property="article:section" content="UX" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-fresh-blue: #4ca9df;
+        --color-fresh-mint: #a1ffb3;
+        --color-bold-indigo: #42378f;
+        --color-bold-coral: #f53844;
+        --font-display: 'Unbounded', sans-serif;
+        --font-sans: 'Inter', system-ui, sans-serif;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-9999 focus:px-4 focus:py-2 focus:bg-purple-600 focus:text-white focus:rounded-lg focus:outline-none"
+      >Przejdź do treści</a
+    >
+    <div id="scroll-progress-bar"></div>
+    <div id="preloader"><div class="preloader-logo">DL</div></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 w-full bg-(--bg-color)/90 backdrop-blur-lg border-b border-gray-100 dark:border-white/5 transition-all duration-300"
+      id="main-nav"
+    >
+      <div class="w-full max-w-7xl mx-auto px-6 md:px-12 py-6 flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-2">
+          <img src="assets/images/logo.ver2.png" alt="DrawLab Logo" class="h-8 md:h-10 w-auto" />
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="realizacje.html" class="nav-link-gradient">Realizacje</a>
+          <a href="o-nas.html" class="nav-link-gradient">O Agencji</a>
+          <a href="blog.html" class="nav-link-gradient font-bold text-gradient-adaptive">Blog</a>
+          <a href="kontakt.html" class="nav-link-gradient">Kontakt</a>
+          <button
+            id="theme-toggle"
+            aria-label="Przełącz motyw"
+            class="p-2.5 rounded-full text-gray-400 hover:bg-gray-100 dark:hover:bg-white/10 focus:outline-none transition-colors"
+          >
+            <svg
+              id="theme-toggle-dark-icon"
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+            <svg
+              id="theme-toggle-light-icon"
+              class="w-5 h-5 hidden"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 5.05A1 1 0 006.464 3.636L5.757 2.93a1 1 0 00-1.414 1.414l.707.707zm1.414 12.364a1 1 0 01-1.414 0l-.707-.707a1 1 0 111.414-1.414l.707.707a1 1 0 010 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="flex items-center gap-4 md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="text-gray-300 focus:outline-none"
+            aria-label="Menu"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden px-6 pb-6 border-t border-white/10 glass-effect"
+      >
+        <div class="flex flex-col space-y-4 mt-4">
+          <a href="blog.html" class="nav-link-gradient py-2 font-bold">← Powrót do bloga</a>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main-content" class="w-full pt-32 pb-24">
+      <header class="w-full px-6 md:px-12 mb-12">
+        <div class="max-w-4xl mx-auto">
+          <a
+            href="blog.html"
+            class="inline-flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-white transition-colors mb-8"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+            Powrót do bloga
+          </a>
+          <div class="flex items-center gap-4 text-sm font-mono text-gray-400 mb-6">
+            <span
+              class="px-3 py-1 rounded-full bg-fresh-mint/10 text-fresh-mint dark:bg-fresh-mint/20"
+              >UX / Sprzedaż</span
+            >
+            <span>16 grudnia 2025</span>
+            <span class="w-1 h-1 rounded-full bg-gray-500"></span>
+            <span>7 min czytania</span>
+          </div>
+          <h1 class="text-3xl md:text-5xl font-display font-bold leading-tight mb-6">
+            Czy Twoja strona to leniwy pracownik? Jak UX decyduje o tym, czy klient kupi, czy
+            ucieknie
+          </h1>
+          <p class="text-xl secondary-text leading-relaxed">
+            Masz ruch z Google, masz piękne logo, ale telefon wciąż milczy? Prawdopodobnie Twoja
+            strona internetowa to labirynt bez wyjścia.
+          </p>
+        </div>
+      </header>
+
+      <article class="w-full px-6 md:px-12">
+        <div
+          class="max-w-4xl mx-auto prose prose-lg dark:prose-invert prose-headings:font-display prose-headings:font-bold prose-a:text-fresh-blue dark:prose-a:text-bold-coral prose-strong:text-white"
+        >
+          <img
+            src="assets/images/blog-feat-3.png"
+            alt="Ilustracja recepcji z leniwym pracownikiem i zdezorientowanym klientem"
+            class="w-full h-auto rounded-2xl mb-12 shadow-2xl skew-y-1 transform transition-transform hover:skew-y-0 duration-500 block mx-auto border border-white/10"
+            loading="eager"
+          />
+          <p>
+            Wielu przedsiębiorców traktuje stronę internetową jak cyfrową wizytówkę – ma być ładna i
+            zawierać dane kontaktowe. To błąd, który kosztuje tysiące złotych rocznie. Twoja strona
+            www nie jest obrazem w galerii sztuki. To narzędzie. To Twój pracownik, który pracuje 24
+            godziny na dobę.
+          </p>
+
+          <p>
+            Tym właśnie zajmuje się <strong>User Experience (UX)</strong>. To projektowanie strony w
+            taki sposób, aby użytkownik czuł się komfortowo, szybko znajdował to, czego szuka, i
+            wykonywał akcję, na której Ci zależy.
+          </p>
+
+          <h2>Zasada 3 sekund: Pierwsze wrażenie, którego nie powtórzysz</h2>
+
+          <p>
+            W internecie nikt nie ma czasu. Badania pokazują, że masz około
+            <strong>3 sekund</strong>, aby przekonać użytkownika, że trafił we właściwe miejsce.
+          </p>
+
+          <p>
+            Dobry UX zaczyna się od jasności komunikatu. Klient wchodząc na stronę, musi natychmiast
+            znać odpowiedzi na trzy pytania:
+          </p>
+
+          <ol>
+            <li><strong>Gdzie jestem?</strong> (Logo i branding)</li>
+            <li><strong>Co tu mogę zrobić?</strong> (Jasna oferta)</li>
+            <li><strong>Dlaczego warto?</strong> (Korzyść dla klienta)</li>
+          </ol>
+
+          <h2>Ścieżka klienta (Customer Journey): Prowadzenie za rękę</h2>
+
+          <p>
+            UX to nie "ładne przyciski". To psychologia i strategia. Projektując stronę, musimy
+            przewidzieć, jak zachowa się użytkownik.
+          </p>
+
+          <p><strong>Jakie elementy UX budują konwersję (sprzedaż)?</strong></p>
+
+          <ul>
+            <li>
+              <strong>Intuicyjna nawigacja:</strong> Menu nie może być zagadką. Nazwy zakładek muszą
+              być oczywiste.
+            </li>
+            <li>
+              <strong>Strategiczne rozmieszczenie CTA:</strong> Przyciski "Kup teraz", "Zadzwoń"
+              muszą być widoczne i kontrastowe.
+            </li>
+            <li><strong>Czytelność treści:</strong> Używanie whitespace, punktorów i nagłówków.</li>
+            <li>
+              <strong>Formularze bez zbędnych pytań:</strong> Każde dodatkowe pole zmniejsza szansę
+              na wypełnienie.
+            </li>
+          </ul>
+
+          <h2>Grzechy główne stron www, które zabijają sprzedaż</h2>
+
+          <ul>
+            <li><strong>Przeładowanie informacjami:</strong> Zbyt wiele pop-upów i animacji.</li>
+            <li>
+              <strong>Brak hierarchii wizualnej:</strong> Kiedy wszystko jest "ważne", nic nie jest
+              ważne.
+            </li>
+            <li>
+              <strong>Ukryty kontakt:</strong> Jeśli klient musi szukać numeru telefonu –
+              zrezygnuje.
+            </li>
+          </ul>
+
+          <h2>Podsumowanie: UX to Inwestycja, która się zwraca</h2>
+
+          <p>
+            User Experience to brakujące ogniwo między SEO (ściągnięciem ruchu) a sprzedażą. Zadbana
+            pod kątem UX strona to inwestycja w handlowca, który nigdy nie bierze urlopu.
+          </p>
+
+          <div
+            class="p-6 rounded-2xl bg-linear-to-br from-fresh-mint/10 to-fresh-blue/10 border border-white/10 mt-12"
+          >
+            <p class="text-sm font-bold uppercase tracking-wider text-fresh-mint mb-2">
+              💡 Ciekawostka
+            </p>
+            <p class="text-base">
+              Badania Forrester Research pokazują, że każdy <strong>1 dolar</strong> zainwestowany w
+              UX przynosi zwrot w wysokości <strong>100 dolarów</strong> (ROI 9 900%). Lepszy UX
+              może zwiększyć konwersję nawet o <strong>400%</strong>.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <section class="w-full px-6 md:px-12 mt-24">
+        <div
+          class="max-w-4xl mx-auto p-10 rounded-3xl glass-effect border border-white/10 text-center"
+        >
+          <h2 class="text-2xl md:text-3xl font-bold mb-4">
+            Chcesz poprawić <span class="text-gradient-adaptive">UX swojej strony?</span>
+          </h2>
+          <p class="text-lg secondary-text mb-8">
+            Przeprowadzimy audyt i zaproponujemy konkretne usprawnienia.
+          </p>
+          <a
+            href="kontakt.html"
+            class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-adaptive text-white font-bold rounded-lg shadow-lg hover:brightness-105 transition-all hover:-translate-y-0.5"
+          >
+            Zamów audyt UX
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-12 border-t border-white/10">
+      <div class="w-full max-w-7xl mx-auto px-6 md:px-12">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+          <div class="text-center md:text-left">
+            <a href="index.html"
+              ><img src="assets/images/logo.ver2.png" alt="DrawLab Logo" class="h-8 w-auto"
+            /></a>
+            <p class="secondary-text text-sm mt-2">Agencja Kreatywna z Radomia</p>
+          </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-white/10 text-center footer-text text-sm">
+          <p>
+            &copy; 2025 DrawLab. Wszelkie prawa zastrzeżone. |
+            <a href="polityka-prywatnosci.html" class="hover:underline">Polityka Prywatności</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Follow Up Button -->
+    <button id="follow-up-btn" class="follow-up-btn" aria-label="Powrót na górę">
+      <span class="follow-up-text">DO GÓRY</span>
+      <div class="follow-up-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script type="module" src="js/modules/main.js"></script>
+  </body>
+</html>
