@@ -2,6 +2,22 @@
 
 # STATIC_CHANGELOG
 
+## [0.5.0] - 2026-02-03
+
+### Dodano
+
+- **Zunifikowany System Zmiennych CSS dla Sekcji:**
+  - `--bg-section` (97% opacity) - główne tło sekcji z widocznością blobów
+  - `--bg-section-alt` - alternatywne tło dla zebra striping
+  - `--bg-section-glass` (85% opacity) - tło dla efektu glassmorphism
+  - `--border-section` - jednolite obramowanie sekcji
+
+### Zmieniono
+
+- **`.dl-section-glass`**: Zaktualizowano do użycia zmiennych CSS, blur zmniejszony z 30px do 20px
+- **Nowe klasy**: `.dl-section`, `.dl-section--alt`, `.dl-section--no-border-*`
+- **Zgodność z P13**: Eliminacja hardcoded wartości kolorów
+
 ## [0.4.0] - 2026-02-03
 
 ### Dodano

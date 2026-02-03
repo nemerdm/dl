@@ -1194,29 +1194,52 @@ html:not(.dark) .trust-blob-light {
 .dl-section-glass {
   position: relative;
   z-index: 1;
-  background: rgba(8, 8, 8, 0.92);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-}
-
-html:not(.dark) .dl-section-glass {
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--bg-section-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid var(--border-section);
+  border-bottom: 1px solid var(--border-section);
 }
 
 /* Warianty przezroczystości */
 .dl-section-glass--light {
-  background: rgba(5, 5, 5, 0.6);
+  background: rgba(8, 8, 8, 0.6);
 }
 html:not(.dark) .dl-section-glass--light {
   background: rgba(255, 255, 255, 0.7);
 }
 
 .dl-section-glass--heavy {
-  background: rgba(5, 5, 5, 0.85);
+  background: rgba(8, 8, 8, 0.92);
 }
 html:not(.dark) .dl-section-glass--heavy {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.92);
 }
+
+/* ------------------------------------------------------------------- */
+/* 12.4 UNIFIED SECTION CLASSES (dl-section)
+/* ------------------------------------------------------------------- */
+
+.dl-section {
+  position: relative;
+  z-index: 1;
+  background: var(--bg-section);
+  border-top: 1px solid var(--border-section);
+  border-bottom: 1px solid var(--border-section);
+}
+
+.dl-section--alt {
+  background: var(--bg-section-alt);
+}
+
+.dl-section--no-border-top {
+  border-top: none;
+}
+
+.dl-section--no-border-bottom {
+  border-bottom: none;
+}
+
 
 /* ------------------------------------------------------------------- */
 /* 13. RESTORED FORM STYLES (FROM LEGACY)
@@ -1228,7 +1251,14 @@ html:not(.dark) .dl-section-glass--heavy {
   --input-border: rgb(255 255 255 / 15%);
   --input-focus-border: #6366f1;
   --input-focus-shadow: rgb(99 102 241 / 20%);
+
+  /* === SECTION BACKGROUNDS (z kanałem alpha dla widoczności blobów) === */
+  --bg-section: rgba(8, 8, 8, 0.97);
+  --bg-section-alt: rgba(5, 5, 5, 0.97);
+  --bg-section-glass: rgba(8, 8, 8, 0.85);
+  --border-section: rgba(255, 255, 255, 0.05);
 }
+
 
 html:not(.dark) {
   --input-bg: #fff;
@@ -1236,7 +1266,14 @@ html:not(.dark) {
   --input-focus-border: #4ca9df;
   /* Fixed hex in shadow for light mode */
   --input-focus-shadow: rgb(76 169 223 / 20%);
+
+  /* === SECTION BACKGROUNDS (Light Mode) === */
+  --bg-section: rgba(255, 255, 255, 0.97);
+  --bg-section-alt: rgba(249, 250, 251, 0.97);
+  --bg-section-glass: rgba(255, 255, 255, 0.85);
+  --border-section: rgba(0, 0, 0, 0.05);
 }
+
 
 .form-input {
   width: 100%;

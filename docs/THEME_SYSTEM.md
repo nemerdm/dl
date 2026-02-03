@@ -308,6 +308,16 @@ html.light-theme .my-element {
 | `--input-border`       | `rgb(255 255 255 / 15%)` | `#D1D5DB` |
 | `--input-focus-border` | `#6366f1`                | `#4CA9DF` |
 
+### Tła Sekcji (NOWE - v0.5.0)
+
+| Zmienna           | Dark                     | Light                     |
+| ----------------- | ------------------------ | ------------------------- |
+| `--bg-section`    | `rgba(8, 8, 8, 0.97)`    | `rgba(255, 255, 255, 0.97)` |
+| `--bg-section-alt`| `rgba(5, 5, 5, 0.97)`    | `rgba(249, 250, 251, 0.97)` |
+| `--bg-section-glass` | `rgba(8, 8, 8, 0.85)` | `rgba(255, 255, 255, 0.85)` |
+| `--border-section`| `rgba(255, 255, 255, 0.05)` | `rgba(0, 0, 0, 0.05)` |
+
+
 ---
 
 ## Checklist dla Nowych Komponentów
