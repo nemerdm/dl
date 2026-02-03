@@ -32,6 +32,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
+        /* Fluid Typography Scale (320px - 1920px viewport) */
+        --text-hero: clamp(3rem, 1.5rem + 6vw, 8rem);
+        --text-6xl: clamp(3rem, 2rem + 4vw, 6rem);
+        --text-5xl: clamp(2.5rem, 1.5rem + 4vw, 4.5rem);
+        --text-4xl: clamp(2rem, 1.25rem + 3vw, 3.5rem);
+        --text-3xl: clamp(1.75rem, 1.125rem + 2.5vw, 2.75rem);
+        --text-2xl: clamp(1.5rem, 1rem + 2vw, 2.25rem);
+        --text-xl: clamp(1.25rem, 1rem + 1vw, 1.5rem);
+
         /* Brand Gradient Colors */
         --color-fresh-blue: #4ca9df;
         --color-fresh-mint: #2dd4bf;
@@ -174,7 +183,7 @@
                   <h3 class="font-bold mt-3 group-hover/item:text-white transition-colors">
                     Strony WWW
                   </h3>
-                  <p class="text-sm secondary-text mt-1">Nowoczesne strony SSG/Headless.</p>
+                  <p class="text-sm text-secondary mt-1">Nowoczesne strony SSG/Headless.</p>
                 </a>
                 <a href="usluga-branding.html" class="mega-menu-item group/item rounded-md">
                   <div class="icon-wrapper p-3 rounded-full bg-gradient-main">
@@ -195,7 +204,7 @@
                   <h3 class="font-bold mt-3 group-hover/item:text-white transition-colors">
                     Branding
                   </h3>
-                  <p class="text-sm secondary-text mt-1">Logo i identyfikacja wizualna.</p>
+                  <p class="text-sm text-secondary mt-1">Logo i identyfikacja wizualna.</p>
                 </a>
                 <a href="usluga-seo.html" class="mega-menu-item group/item rounded-md">
                   <div class="icon-wrapper p-3 rounded-full bg-gradient-main">
@@ -216,7 +225,7 @@
                   <h3 class="font-bold mt-3 group-hover/item:text-white transition-colors">
                     SEO / Marketing
                   </h3>
-                  <p class="text-sm secondary-text mt-1">Pozycjonowanie i content.</p>
+                  <p class="text-sm text-secondary mt-1">Pozycjonowanie i content.</p>
                 </a>
               </div>
             </div>
@@ -351,15 +360,15 @@
             >
               <a
                 href="usluga-strony-www.html"
-                class="block py-1 text-sm secondary-text hover:text-white"
+                class="block py-1 text-sm text-secondary hover:text-white"
                 >Strony WWW</a
               >
               <a
                 href="usluga-branding.html"
-                class="block py-1 text-sm secondary-text hover:text-white"
+                class="block py-1 text-sm text-secondary hover:text-white"
                 >Branding</a
               >
-              <a href="usluga-seo.html" class="block py-1 text-sm secondary-text hover:text-white"
+              <a href="usluga-seo.html" class="block py-1 text-sm text-secondary hover:text-white"
                 >SEO / Pozycjonowanie</a
               >
             </div>
@@ -396,13 +405,13 @@
               id="mobile-knowledge-links"
               class="pl-4 border-l-2 border-purple-500/30 space-y-2 mt-2 overflow-hidden max-h-0 transition-all duration-300"
             >
-              <a href="blog.html" class="block py-1 text-sm secondary-text hover:text-white"
+              <a href="blog.html" class="block py-1 text-sm text-secondary hover:text-white"
                 >Blog</a
               >
-              <a href="slownik.html" class="block py-1 text-sm secondary-text hover:text-white"
+              <a href="slownik.html" class="block py-1 text-sm text-secondary hover:text-white"
                 >Słownik</a
               >
-              <a href="faq.html" class="block py-1 text-sm secondary-text hover:text-white">FAQ</a>
+              <a href="faq.html" class="block py-1 text-sm text-secondary hover:text-white">FAQ</a>
             </div>
           </div>
 
@@ -438,7 +447,7 @@
 
       <!-- 2. H1 HEADLINE -->
       <h1
-        class="text-5xl md:text-7xl lg:text-8xl font-black leading-tight tracking-tight mb-14 animate-enter delay-1 max-w-6xl"
+        class="text-hero font-black leading-tight tracking-tight mb-14 animate-enter delay-1 max-w-6xl"
       >
         Twój partner<br />
         <span
@@ -449,7 +458,7 @@
 
       <!-- 3. ROTATOR -->
       <div
-        class="text-xl md:text-3xl font-medium secondary-text mb-16 animate-enter delay-1 flex justify-center items-center gap-2"
+        class="text-xl md:text-3xl font-medium text-secondary mb-16 animate-enter delay-1 flex justify-center items-center gap-2"
       >
         <span id="animated-subtitle" class="font-bold typing-cursor text-primary">
           strony internetowe zgodne ze standardami
@@ -460,7 +469,7 @@
         <p class="text-xl md:text-2xl font-bold text-primary mb-3">
           Szczera rozmowa. Strategia. Konkret.
         </p>
-        <p class="text-lg secondary-text leading-relaxed">
+        <p class="text-lg text-secondary leading-relaxed">
           Budujemy narzędzia, które po prostu działają – od czystego kodu W3C po spójny branding.
           Jesteśmy partnerem, który doradza i zostaje na dłużej.
         </p>
@@ -522,7 +531,7 @@
 
       <!-- 6. TRUST INDICATORS -->
       <div
-        class="w-full max-w-4xl border-t border-current/10 pt-10 flex flex-wrap justify-center gap-10 text-sm font-semibold secondary-text animate-enter delay-3"
+        class="w-full max-w-4xl border-t border-current/10 pt-10 flex flex-wrap justify-center gap-10 text-sm font-semibold text-secondary animate-enter delay-3"
       >
         <div class="flex items-center gap-2">
           <div class="w-2 h-2 bg-green-500 rounded-sm"></div>
@@ -566,9 +575,7 @@
         <div class="max-w-7xl mx-auto relative z-10">
           <!-- Header Sekcji -->
           <div class="mb-16 max-w-3xl animate-on-scroll animate-fade-in-up">
-            <h2
-              class="text-3xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight mb-6 bento-heading"
-            >
+            <h2 class="text-5xl font-display font-bold tracking-tight mb-6 bento-heading">
               Nasze rzemiosło. <br />
               <span
                 class="bg-linear-to-br from-fresh-blue to-fresh-mint dark:from-bold-indigo dark:to-bold-coral bg-clip-text text-transparent"
@@ -582,7 +589,7 @@
           </div>
 
           <!-- BENTO GRID CONTAINER -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 auto-rows-[300px]">
+          <div class="@container grid grid-cols-1 md:grid-cols-3 gap-8 auto-rows-min">
             <!-- KARTA 1: WEB DEV (Szeroka) -->
             <a
               href="usluga-strony-www.html"
@@ -607,11 +614,11 @@
                   </svg>
                 </div>
                 <h3
-                  class="text-3xl font-display font-bold mb-4 bento-heading bento-heading-hover transition-colors"
+                  class="text-xl @sm:text-2xl @md:text-3xl font-display font-bold mb-4 bento-heading bento-heading-hover transition-colors hyphens-auto"
                 >
                   Strony w standardzie W3C.
                 </h3>
-                <p class="text-lg text-gray-500 dark:text-gray-400 max-w-md">
+                <p class="text-base @sm:text-lg text-gray-500 dark:text-gray-400 max-w-md">
                   Czysty kod, technologia Astro/React i wydajność, która zostaje na lata.
                 </p>
               </div>
@@ -650,11 +657,11 @@
                 </svg>
               </div>
               <h3
-                class="text-3xl font-display font-bold mb-4 bento-heading bento-heading-hover transition-colors"
+                class="text-xl @sm:text-2xl @md:text-3xl font-display font-bold mb-4 bento-heading bento-heading-hover transition-colors hyphens-auto"
               >
                 Widoczność w Google.
               </h3>
-              <p class="text-lg text-gray-500 dark:text-gray-400 mb-8">
+              <p class="text-base @sm:text-lg text-gray-500 dark:text-gray-400 mb-8">
                 Pozycjonowanie oparte na danych i konkretnych rezultatach wyszukiwania.
               </p>
 
@@ -700,11 +707,11 @@
                   </svg>
                 </div>
                 <h3
-                  class="text-2xl font-display font-bold mb-4 bento-heading bento-heading-hover transition-colors"
+                  class="text-lg @sm:text-xl @md:text-2xl font-display font-bold mb-4 bento-heading bento-heading-hover transition-colors hyphens-auto"
                 >
                   Spójna identyfikacja.
                 </h3>
-                <p class="text-lg text-gray-500 dark:text-gray-400">
+                <p class="text-base @sm:text-lg text-gray-500 dark:text-gray-400">
                   Systemy wizualne, które oddają charakter marki i budują zaufanie.
                 </p>
               </div>
@@ -718,7 +725,9 @@
                 class="absolute inset-0 bento-hover-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-500"
               ></div>
 
-              <h3 class="text-2xl font-display font-bold mb-4 relative z-10 bento-heading">
+              <h3
+                class="text-lg @sm:text-xl @md:text-2xl font-display font-bold mb-4 relative z-10 bento-heading hyphens-auto"
+              >
                 Szukasz wsparcia?
               </h3>
               <a
@@ -930,7 +939,7 @@
             <p class="portfolio-label text-sm font-bold tracking-[0.2em] uppercase mb-4">
               Wybrane Realizacje
             </p>
-            <h2 class="portfolio-heading text-4xl md:text-6xl font-display font-bold leading-tight">
+            <h2 class="portfolio-heading text-5xl font-display font-bold leading-tight">
               Prace, które <br />
               <span class="text-gradient-adaptive-portfolio">robią różnicę.</span>
             </h2>
@@ -964,9 +973,7 @@
             >
               <div class="flex items-baseline gap-6 relative z-10">
                 <span class="project-number font-mono text-sm">01</span>
-                <h3 class="project-title text-4xl md:text-7xl font-display font-bold uppercase">
-                  EkoKawa
-                </h3>
+                <h3 class="project-title text-5xl font-display font-bold uppercase">EkoKawa</h3>
               </div>
 
               <div class="flex items-center gap-8 relative z-10">
@@ -996,9 +1003,7 @@
             >
               <div class="flex items-baseline gap-6 relative z-10">
                 <span class="project-number font-mono text-sm">02</span>
-                <h3 class="project-title text-4xl md:text-7xl font-display font-bold uppercase">
-                  TechStart
-                </h3>
+                <h3 class="project-title text-5xl font-display font-bold uppercase">TechStart</h3>
               </div>
 
               <div class="flex items-center gap-8 relative z-10">
@@ -1028,9 +1033,7 @@
             >
               <div class="flex items-baseline gap-6 relative z-10">
                 <span class="project-number font-mono text-sm">03</span>
-                <h3 class="project-title text-4xl md:text-7xl font-display font-bold uppercase">
-                  LogiFlow
-                </h3>
+                <h3 class="project-title text-5xl font-display font-bold uppercase">LogiFlow</h3>
               </div>
 
               <div class="flex items-center gap-8 relative z-10">
@@ -1085,9 +1088,7 @@
             <p class="proces-label text-sm font-bold tracking-[0.2em] uppercase mb-4">
               Metodologia
             </p>
-            <h2
-              class="proces-heading text-3xl md:text-5xl lg:text-6xl font-display font-bold leading-tight"
-            >
+            <h2 class="proces-heading text-5xl font-display font-bold leading-tight">
               Od chaosu do <br />
               <span class="text-gradient-adaptive-process">systemu.</span>
             </h2>
@@ -1233,9 +1234,7 @@
             <p class="trust-label text-sm font-bold tracking-[0.2em] uppercase mb-4 inline-block">
               Social Proof
             </p>
-            <h2
-              class="trust-heading text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight"
-            >
+            <h2 class="trust-heading text-5xl font-display font-bold leading-tight">
               Wyniki mówią <br />
               <span class="text-gradient-adaptive-trust">same za siebie.</span>
             </h2>
@@ -1374,7 +1373,7 @@
       >
         <div class="max-w-4xl mx-auto">
           <div class="mb-16 text-center animate-on-scroll animate-fade-in-up">
-            <h2 class="faq-heading text-3xl md:text-5xl font-display font-bold mb-6">
+            <h2 class="faq-heading text-5xl font-display font-bold mb-6">
               Pytania, które <br />
               <span class="text-gradient-adaptive-faq">warto zadać.</span>
             </h2>
@@ -1466,7 +1465,7 @@
             >
               Baza Wiedzy
             </p>
-            <h2 class="text-3xl md:text-5xl font-display font-bold text-gray-900 dark:text-white">
+            <h2 class="text-5xl font-display font-bold text-gray-900 dark:text-white">
               Najnowsze <span class="text-gradient-adaptive-trust">wpisy.</span>
             </h2>
           </div>
@@ -1604,9 +1603,7 @@
       >
         <div class="max-w-4xl mx-auto relative z-10 text-center">
           <div class="mb-16 animate-on-scroll animate-fade-in-up">
-            <h2
-              class="text-3xl md:text-5xl font-display font-bold text-gray-900 dark:text-white mb-6"
-            >
+            <h2 class="text-5xl font-display font-bold text-gray-900 dark:text-white mb-6">
               Masz ciekawy projekt? <br />
               <span
                 class="text-transparent bg-clip-text bg-linear-to-r from-fresh-blue to-fresh-mint dark:from-bold-indigo dark:to-bold-coral"
@@ -1954,7 +1951,7 @@
       class="fixed bottom-4 left-4 right-4 md:left-auto md:w-auto z-9998 p-6 glass-effect rounded-lg shadow-2xl"
     >
       <div class="flex flex-col md:flex-row justify-between items-center gap-4 max-w-4xl mx-auto">
-        <p class="text-sm secondary-text text-center md:text-left">
+        <p class="text-sm text-secondary text-center md:text-left">
           Ta strona wykorzystuje pliki cookie.
           <a href="polityka-prywatnosci.html" class="underline hover:text-white">Szczegóły</a>.
         </p>
@@ -1975,7 +1972,7 @@
       id="sticky-mobile-cta"
     >
       <div class="flex flex-col">
-        <span class="text-xs secondary-text">Potrzebujesz wyceny?</span>
+        <span class="text-xs text-secondary">Potrzebujesz wyceny?</span>
         <span class="font-bold text-sm text-white">Projekt startuje od zaraz</span>
       </div>
       <div class="flex gap-3">

@@ -2,6 +2,46 @@
 
 # STATIC_CHANGELOG
 
+## [1.0.0] - 2026-02-03 (Operation Clean Slate)
+
+### Dodano
+
+- **Nowa architektura CSS** - kompletny rewrite `style.css`:
+  - Centralizacja zmiennych w `:root` (z-index, kolory, shadows, transitions)
+  - Skonsolidowane `@keyframes` (12 animacji w jednym miejscu)
+  - `focus-visible` dla dostępności (P23)
+  - Klasy `.trans-delay-*` (100-600ms)
+  - Klasa `.shine-effect` dla efektu świecenia na kartach
+- **System sekcji `.dl-section`** z wariantami `--alt`, `--glass`, `--no-border-*`
+- **System blobów `.dl-blob`** z pozycjonowaniem i kolorami
+
+### Zmieniono
+
+- **Migracja komponentów** ze starego CSS z 100% użyciem zmiennych
+- **RWD `.mega-menu`** - poprawione podejście Mobile First (usunięto `min-width`)
+- **Konsolidacja kart** - usunięto duplikaty `.review-card`, `.faq-card`
+- **Zamiana klasy** `secondary-text` → `text-secondary` w `index.html` (14 wystąpień)
+
+### Usunięto
+
+- Zduplikowane definicje klas (120+ linii)
+- Hardcoded kolory (8 wystąpień zastąpionych zmiennymi)
+- Magic numbers z-index (6 wystąpień → semantyczne zmienne)
+- Dead code: `.bento-section-bg`, stare duplikaty
+
+### TODO (Przyszłe zadania)
+
+- [ ] **Refaktoryzacja prefiksu `dl-`** (P21/P48): Przemianowanie wszystkich custom klas CSS na wersje z prefiksem `dl-` dla zgodności z protokołami DrawLab. Dotyczy ~40 klas:
+  - `.bento-card` → `.dl-bento-card`
+  - `.review-card` → `.dl-review-card`
+  - `.faq-card` → `.dl-faq-card`
+  - `.gradient-button` → `.dl-gradient-button`
+  - `.mega-menu` → `.dl-mega-menu`
+  - i inne...
+  - **Wymaga:** Zmiany w `style.css` + wszystkie pliki HTML
+
+---
+
 ## [0.5.0] - 2026-02-03
 
 ### Dodano
