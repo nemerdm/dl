@@ -26,16 +26,16 @@
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
-    "live-server": "^1.2.2",
-    "html-validator": "^6.0.1",
+    "@tailwindcss/cli": "^4.0.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.57.1",
+    "html-validator": "^5.1.18",
+    "live-server": "^1.2.0",
+    "postcss": "^8.5.0",
+    "prettier": "^3.2.4",
     "stylelint": "^16.2.0",
     "stylelint-config-standard": "^36.0.0",
-    "eslint": "^8.57.0",
-    "prettier": "^3.2.4",
-    "tailwindcss": "^4.0.0",
-    "@tailwindcss/cli": "^4.0.0",
-    "postcss": "^8.5.0",
-    "autoprefixer": "^10.4.0"
+    "tailwindcss": "^4.0.0"
   },
   "engines": {
     "node": ">=18.0.0",
