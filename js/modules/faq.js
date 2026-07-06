@@ -19,7 +19,7 @@ export function initFAQ() {
     // Sprawdź czy kliknięto w element <summary> wewnątrz <details class="faq-card">
     const summary = e.target.closest('details.faq-card summary');
 
-    if (!summary) return;
+    if (!summary) {return;}
 
     const targetDetail = summary.parentElement; // Element <details>
 

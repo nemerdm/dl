@@ -47,7 +47,7 @@ export function initTheme() {
   // Obsługa kliknięcia przełącznika (Event Delegation dla dynamicznie ładowanej nawigacji)
   document.addEventListener('click', event => {
     const toggleBtn = event.target.closest('#theme-toggle');
-    if (!toggleBtn) return;
+    if (!toggleBtn) {return;}
 
     const isCurrentlyDark = document.documentElement.classList.contains('dark');
     const newIsDark = !isCurrentlyDark;
