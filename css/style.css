@@ -920,12 +920,6 @@ html:not(.dark) .glass-effect {
   border: 1px solid var(--border-subtle);
 }
 
-/* 12.1b Mobile Nav Panel (fully opaque - glass-effect is too transparent for
-   a full-width dropdown covering page content underneath) */
-.mobile-menu-panel {
-  background: var(--bg-elevated);
-}
-
 /* 12.2 Nav Link with Gradient Underline */
 .nav-link-gradient {
   position: relative;
@@ -965,8 +959,9 @@ html:not(.dark) .glass-effect {
   padding: 1rem;
   border-radius: 1rem;
 
-  /* Opaque - must fully cover page content underneath */
-  background: var(--bg-elevated);
+  /* Glass Effect */
+  background: rgb(13 13 13 / 95%);
+  backdrop-filter: blur(var(--blur-md));
   border: 1px solid var(--border-default);
   box-shadow: var(--shadow-lg);
 }
@@ -980,9 +975,9 @@ html:not(.dark) .glass-effect {
   }
 }
 
-/* 12.3b Small Nav Dropdown (e.g. "Wiedza") - same opacity requirement */
-.nav-mini-dropdown {
-  background: var(--bg-elevated);
+html:not(.dark) .mega-menu {
+  background: rgb(255 255 255 / 95%);
+  border: 1px solid var(--border-subtle);
 }
 
 .mega-menu-item {
